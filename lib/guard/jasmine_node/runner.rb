@@ -34,6 +34,7 @@ module Guard
         options = []
         options << "--coffee" if @options[:coffeescript]
         options << "--verbose" if @options[:verbose]
+        options << "--forceexit" if @options[:forceexit]
         options.join(" ")
       end
     end
